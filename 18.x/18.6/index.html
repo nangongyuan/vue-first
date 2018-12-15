@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>18.5</title>
+</head>
+<body>
+<div id="app">
+    <div style="padding: 10rem;">
+        <label>男<input name="sex" type="radio" value="male" v-model="sex"></label>
+        <label>女<input name="sex" type="radio" value="female" v-model="sex"></label>
+        <br>
+        {{sex}}
+    </div>
+    <div style="padding: 10rem;">
+        <label>男<input name="sexx" type="checkbox" v-model="sexx" value="male"></label>
+        <label>女<input name="sexx" type="checkbox" v-model="sexx" value="female"></label>
+        <br>
+        {{sexx}}
+    </div>
+    <div style="padding: 10rem;">
+        <textarea v-model="article"> </textarea>
+    </div>
+    <div style="padding: 10rem;">
+        你来自哪里？
+        <select v-model="select">
+            <option value="1">王家沟</option>
+            <option value="2">背背山</option>
+        </select>
+        {{select}}
+    </div>
+    <div style="padding: 10rem;">
+        你要去哪里？
+        <select v-model="desc" multiple>
+            <option value="1">王家沟</option>
+            <option value="2">背背山</option>
+        </select>
+        {{desc}}
+    </div>
+</div>
+<script src="../lib/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

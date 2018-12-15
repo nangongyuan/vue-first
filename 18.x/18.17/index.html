@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>18.17</title>
+    <style>
+        .panel {
+            max-width: 300px;
+            border: 1px solid #999;
+            margin-top: 10px;
+        }
+
+        .panel > * {
+            padding: 5px;
+        }
+
+        .panel .title {
+            border-bottom: 1px solid #999;
+        }
+
+        .panel .footer {
+            border-top: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <panel>
+        <div slot="title">lsadjflsadjf</div>
+        <div slot="content">aldjflkjsdaflkajsdlfjaodsijfoiasdjflkasdjfk</div>
+        <div slot="footer"></div>
+    </panel>
+    <panel>
+        <div slot="title">lsadjflsadjf</div>
+        <div slot="content">aldjflkjsdaflkajsdlfjaodsijfoiasdjflkasdjfk</div>
+        <div slot="footer"></div>
+    </panel>
+</div>
+
+<template id="panel-tpl">
+    <div class="panel">
+        <div class="title">
+            <slot name="title"></slot>
+        </div>
+        <div class="content">
+            <slot name="content"></slot>
+        </div>
+        <div class="footer">
+            <slot name="footer">更多信息</slot>
+        </div>
+    </div>
+</template>
+<script src="../lib/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

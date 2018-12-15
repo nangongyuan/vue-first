@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <button v-on:click="onClick()">button1</button>
+    <button v-on:click="onClick">button2</button>
+    <button v-on="{mouseenter: onEnter, mouseleave: onOut}">button3</button>
+    <!--<form v-on:submit="onSubmit($event)">-->
+    <!--<input type="text">-->
+    <!--<button type="submit">提交</button>-->
+    <!--</form>-->
+    <!--<form v-on:submit.prevent="onSubmit">-->
+    <!--<input type="text">-->
+    <!--<button type="submit">提交</button>-->
+    <!--</form>-->
+    <form v-on:submit.stop="onSubmit">
+        <input type="text">
+        <button type="submit">提交</button>
+    </form>
+    <form v-on:submit.stop="onSubmit" v-on:keyup="onKeyUp">
+        <input type="text">
+        <button type="submit">提交</button>
+    </form>
+    <form v-on:submit.stop="onSubmit" v-on:keyup.enter="onEnterUp">
+        <input type="text">
+        <button type="submit">提交</button>
+    </form>
+</div>
+<script src="../lib/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

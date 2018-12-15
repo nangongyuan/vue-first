@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>18.5</title>
+</head>
+<body>
+<div id="app">
+    <!--<input v-model.lazy="name" type="text">-->
+    <input type="text" v-model.trim="name">
+    {{name}}
+    <div>
+        <input type="text" v-model.number="price">
+        {{price}}
+    </div>
+</div>
+<script src="../lib/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
