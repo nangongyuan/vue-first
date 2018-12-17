@@ -1,0 +1,87 @@
+body {
+    background: #454545;
+    line-height: 1.7;
+}
+
+a, body {
+    color: #eee;
+}
+
+a {
+    text-decoration: none;
+}
+
+.side-bar {
+    float: left;
+    width: 20%;
+    position: fixed;
+}
+
+.side-bar > * {
+    margin: 10px 15px;
+}
+
+.main {
+    float: right;
+    width: 80%;
+}
+
+.header .logo {
+    padding: 10px 20px;
+    font-size: 30px;
+    display: inline-block;
+    border: 3px solid #eee;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.side-bar .nav a, .side-bar .tag-list a {
+    display: block;
+    padding: 8px 20px;
+    color: #999;
+    -webkit-transition: color 200ms;
+    -moz-transition: color 200ms;
+    -ms-transition: color 200ms;
+    -o-transition: color 200ms;
+    transition: color 200ms;
+}
+
+.side-bar .nav a:hover, .side-bar .tag-list a:hover {
+    color: #eee;
+}
+
+.side-bar .nav a {
+    font-weight: 900;
+}
+
+.article-list, .article {
+    margin-right: 30%;
+    background: #fff;
+    color: #454545;
+    padding: 20px 30px;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+}
+
+.article-list .item .title {
+    font-size: 23px;
+    font-weight: 700;
+    color: #454545;
+}
+
+.article-list .item .status, .article .status {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.article-list .item > *, .article > * {
+    margin: 10px 0;
+}
+
+.article-list .item {
+    margin-bottom: 25px;
+}
+
+#menuCheckBox, #menuToggle {
+    display: none;
+}
